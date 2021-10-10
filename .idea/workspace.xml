@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bab67acc-9b56-46d2-b434-f9132e854271" name="Default Changelist" comment="" />
+    <list default="true" id="bab67acc-9b56-46d2-b434-f9132e854271" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/contracts/TransferToken.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/TransferToken.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TransferToken.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/TransferToken.test.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +17,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1yoXWo6brke1jD74C5p9JNUVvNI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -61,7 +68,7 @@
       <updated>1632918948736</updated>
       <workItem from="1632918949918" duration="38653000" />
       <workItem from="1633512690223" duration="51511000" />
-      <workItem from="1633899252378" duration="1308000" />
+      <workItem from="1633899252378" duration="1975000" />
     </task>
     <servers />
   </component>

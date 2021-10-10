@@ -105,6 +105,5 @@ contract('TransferToken', accounts => {
                 .should.be.rejectedWith(Error, "Returned error: VM Exception while processing transaction: revert ERC20:" +
                 " transfer amount exceeds balance -- Reason given: ERC20: transfer amount exceeds balance.");
         });
-
     });
 });

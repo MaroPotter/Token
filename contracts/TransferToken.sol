@@ -1,6 +1,5 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
-
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "./Token.sol";
 
@@ -12,14 +11,12 @@ contract TransferToken is Ownable {
     uint amountTokenB;
     uint priceTokenB;
 
-
     constructor(address _tokenAddressA, address _tokenAddressB, uint _priceTokenB) {
         tokenAddressA = _tokenAddressA;
         tokenAddressB = _tokenAddressB;
         priceTokenB = _priceTokenB;
     }
-
-
+    
     function updatePrice(uint _newPriceTokenB) public onlyOwner {
         priceTokenB = _newPriceTokenB;
     }
