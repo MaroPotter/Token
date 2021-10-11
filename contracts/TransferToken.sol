@@ -4,7 +4,6 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "./Token.sol";
 
 contract TransferToken is Ownable {
-
     address tokenAddressA;
     address tokenAddressB;
     uint amountTokenA;
@@ -16,13 +15,12 @@ contract TransferToken is Ownable {
         tokenAddressB = _tokenAddressB;
         priceTokenB = _priceTokenB;
     }
-    
+
     function updatePrice(uint _newPriceTokenB) public onlyOwner {
         priceTokenB = _newPriceTokenB;
     }
 
     function deposit(address _tokenAddress, uint _amount) public onlyOwner {
-
         Token token = Token(_tokenAddress);
         token.transferFrom(owner(), address(this), _amount);
 
@@ -35,9 +33,7 @@ contract TransferToken is Ownable {
     }
 
     function exchange(address _tokenAddress, uint _amountToken) external {
-
         if (_tokenAddress == tokenAddressA) {
-
             Token tokenA = Token(_tokenAddress);
             uint exchangedAmountTokenB = _amountToken / priceTokenB;
             require(exchangedAmountTokenB <= amountTokenB);
@@ -50,7 +46,6 @@ contract TransferToken is Ownable {
         }
 
         if(_tokenAddress == tokenAddressB ) {
-
             Token tokenB = Token(_tokenAddress);
             uint exchangedAmountTokenA = _amountToken * priceTokenB;
             require(exchangedAmountTokenA <= amountTokenA);

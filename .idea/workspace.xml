@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bab67acc-9b56-46d2-b434-f9132e854271" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/contracts/TransferToken.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/TransferToken.sol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/TransferToken.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/TransferToken.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +67,7 @@
       <updated>1632918948736</updated>
       <workItem from="1632918949918" duration="38653000" />
       <workItem from="1633512690223" duration="51511000" />
-      <workItem from="1633899252378" duration="1975000" />
+      <workItem from="1633899252378" duration="2793000" />
     </task>
     <servers />
   </component>
