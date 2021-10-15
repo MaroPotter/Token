@@ -10,7 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "@openzeppelin/contracts": "^4.3.2",
+    "bignumber.js": "^9.0.1",
     "chai": "^4.3.4",
-    "chai-as-promised": "7.1.1"
+    "chai-as-promised": "7.1.1",
+    "prb-math": "^2.3.0"
   }
 }

@@ -3,8 +3,11 @@ pragma solidity ^0.8.7;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-contract Token is ERC20 {
+contract TokenB is ERC20 {
     constructor(string memory _name, string memory _symbol) ERC20(_name, _symbol)  {
-        _mint(msg.sender, 1000);
+        _mint(msg.sender, 1000*10**18);
+    }
+    function decimals() public pure override returns (uint8) {
+        return 6;
     }
 }
