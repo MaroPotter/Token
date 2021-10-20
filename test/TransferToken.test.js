@@ -8,7 +8,7 @@ require('chai')
 // This is a workaround till BigInt is fully supported by the standard
 // If this is not done, then a JSON.stringify(BigInt) throws
 // "TypeError: Do not know how to serialize a BigInt"
-BigInt.prototype.toJSON = function() { //additional function necessary to conversion
+BigInt.prototype.toJSON = function() {
     return this.toString();
 };
 
@@ -60,6 +60,7 @@ contract('TransferToken', accounts => {
         });
 
         it('owner approved TransferToken and called function deposit()', async function() {
+            // await tokenA.safeApprove(addressTransferToken, BigInt(500 * 1e18));
             await tokenA.approve(addressTransferToken, BigInt(500 * 1e18));
             await tokenB.approve(addressTransferToken, BigInt(250 * 1e18));
 
